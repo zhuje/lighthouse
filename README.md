@@ -1,3 +1,11 @@
+### Applicant Info -- Requested Information from Recruiter Email 
+Please include a current resume in .doc or .docx format in the zip file with your response.
+•	Attached. 
+Let us know your current work authorization status in the USA.
+•	USA citizen 
+And let us know your potential start date (we are prioritizing candidates that can start immediately.)
+•	May 16, 2022
+
 ### Overall Approach 
 My overall approach to use a dictionary to 
 map a given locus with its corresponding coverage. 
