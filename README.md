@@ -1,10 +1,10 @@
 ### Applicant Info -- Requested Information from Recruiter Email 
 Please include a current resume in .doc or .docx format in the zip file with your response.
-•	Attached. 
+<br> •	Attached. </br>
 Let us know your current work authorization status in the USA.
-•	USA citizen 
+<br>•	USA citizen <br/>
 And let us know your potential start date (we are prioritizing candidates that can start immediately.)
-•	May 16, 2022
+<br> •	May 16, 2022 </br>
 
 ### Overall Approach 
 My overall approach to use a dictionary to 
