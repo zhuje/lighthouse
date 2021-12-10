@@ -38,4 +38,12 @@ The difficulty of implementing with this approach is you'd
 already need to know range of loci to create the static 
 array. 
 
-
+Another optimization that should be considered but is out 
+of the scope of this problem is using Pandas, the python 
+data analysis tool. This problem assumes the data given has 
+already been cleaned and there are no invalid or missing values. 
+Using Panadas would make it easier to address these concerns 
+and make it simpler to work with large datasets by manipulating 
+them as dataframes rather than reading and processing individual 
+rows. However, because Panadas is a heavy framework it would not 
+be sensible to use for this exercise. 
