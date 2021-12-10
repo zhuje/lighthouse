@@ -13,7 +13,6 @@ class Solution:
     # preprocess_reads() -- takes the reads and puts them into a dictionary
     # where keys are loci and values are counts of each read (aka coverage).
     def preprocess_reads(self):
-        print("preprocess_reads")
         with open(self.read_file) as csv_file:
             reader = csv.DictReader(csv_file)
             try:
@@ -33,8 +32,6 @@ class Solution:
     # process_coverage() -- reads the position of interest and access the dictionary to retrieve coverage.
     # This tuple is saved in an array to be written to a csv file.
     def process_coverage(self):
-        print("process coverage")
-
         with open(self.loci_file) as csv_file:
             reader = csv.reader(csv_file)
             next(reader, None)  # skips header row
@@ -52,7 +49,6 @@ class Solution:
 
     # write_coverage -- writes coverage for positions of interest to a given csv file
     def write_coverage(self):
-        print("write coverage")
         with open(self.loci_file, 'w') as csv_file:
             try:
                 writer = csv.writer(csv_file)
@@ -66,4 +62,3 @@ class Solution:
         self.preprocess_reads()
         self.process_coverage()
         self.write_coverage()
-

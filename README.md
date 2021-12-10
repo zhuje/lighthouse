@@ -1,12 +1,13 @@
 ### Overall Approach 
 My overall approach to use a dictionary to 
-index loci its corresponding coverage. 
+map a given locus with its corresponding coverage. 
 
-From the read.csv file I take every locus from 
-each read, iterate through its length, and insert 
-them into the dictionary as keys. 
-Its corresponding value is the number of times
-I've seen this key. This would have a runtime of 
+From the read.csv file I take the starting position
+and length and use it to iterate through all the loci
+in the snippet. These are inserted into the dictionary
+as keys. Its corresponding value is the number of times
+I've seen this key as I iterate through each read. 
+This would have a runtime of 
 O(m * n) where m is the number of reads and n 
 is the length of each read.
 
@@ -15,6 +16,10 @@ Dictionary = key : locus | value : coverage
 Then in loci.csv I take the given position, access 
 the dictionary, and output the corresponding 
 coverage. Accessing the dictionary would be O(1). 
+
+So the overall runtime of the program would be 
+O(m*n) + O(l), where l is the number of loci 
+in the loci.csv file.
 
 ### Optimizations
 Another approach I considered was to use an 
@@ -30,9 +35,9 @@ as an array.
 
 Doing the static array approach you'd create an int array such 
 that each index represents a locus. Each index starts 
-with a value of 0, then while processing through the reads and lengths
+with a value of 0, then while processing through the length of the read
 we increment the value of the corresponding index every time we see it. 
-At the end reads.csv each index in the array would contain the 
+At the end, each index in the array would contain the 
 coverage of its respectively locus.
 The difficulty of implementing with this approach is you'd 
 already need to know range of loci to create the static 
