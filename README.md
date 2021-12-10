@@ -6,7 +6,7 @@ From the read.csv file I take the starting position
 and length and use it to iterate through all the loci
 in the snippet. These are inserted into the dictionary
 as keys. Its corresponding value is the number of times
-I've seen this key as I iterate through each read. 
+I've seen the key.
 This would have a runtime of 
 O(m * n) where m is the number of reads and n 
 is the length of each read.
@@ -15,11 +15,13 @@ Dictionary = key : locus | value : coverage
 
 Then in loci.csv I take the given position, access 
 the dictionary, and output the corresponding 
-coverage. Accessing the dictionary would be O(1). 
+coverage. Accessing the dictionary would be O(1) 
+for each given position. So the runtime would be 
+O(l), where l is the number of positions 
+in the loci.csv file.
 
 So the overall runtime of the program would be 
-O(m*n) + O(l), where l is the number of loci 
-in the loci.csv file.
+O(m*n) + O(l).
 
 ### Optimizations
 Another approach I considered was to use an 
